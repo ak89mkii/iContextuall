@@ -1,9 +1,13 @@
 # iContextuall
 
+![GitHub Logo](interface.png)
+
 ## Technologies:
 - Python
 - Flask
 - Twilio
+- HTML5
+- CSS3
 - Bootstrap
 
 ## References:
