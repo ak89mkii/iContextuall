@@ -1,5 +1,8 @@
 # iContextuall
 
+## Description:
+A basic browser-based GUI template for the Twilio SMS Python platform. You must add your own credentials (account_sid, auth_token, phone number, etc.). Links to the Twilio docs and other references are linked below.
+
 ![GitHub Logo](interface.png)
 
 ## Technologies:
