@@ -9,12 +9,12 @@ app = Flask(__name__)
 def home():
     return render_template('index.html', content='Add a Text', url='Add an Image URL')
 
-@app.route("/", methods=["POST", "GET"])
+@app.route("/", methods=["POST"])
 def message():
     if request.method == "POST":
         text = request.form["nm"]
         image = request.form["nm2"]
-        def cortana(text, image):
+        def send(text, image):
             account_sid = ''
             auth_token = ''
             client = Client(account_sid, auth_token)
@@ -26,19 +26,7 @@ def message():
                                         to='+'
                                             )
 
-            print(message.sid)
-
-        return cortana(text, image)
-    else:
-        return render_template('index.html')
-
-# @app.route("/<name>")
-# def user(name):
-#     return (f"Hello there {name}!")
-
-# @app.route("/admin/")
-# def admin():
-#     return redirect(url_for("user", name="Admin!"))
+        return send(text, image)
 
 if __name__=="__main__":
     app.run()
