@@ -22,7 +22,7 @@ def message():
             message = client.messages.create(
                                         body=text,
                                         from_='+',
-                                        media_url=[image],
+                                        media_url=image,
                                         to='+'
                                             )
 
